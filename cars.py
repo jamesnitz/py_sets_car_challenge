@@ -37,10 +37,10 @@ available_car_colors = (
   (14, 2), (14, 5), (14, 8),
   (15, 1), (15, 4), (15, 7)
 )
-# Here's HOWIE DO IT
-# 1 Declare a dictionary 
+# # Here's HOWIE DO IT
+# # 1 Declare a dictionary 
 report_object = dict()
-# loop over the makes  then declare another dictionary to hold the models and colors
+# loop over the makes  then declare another dictionary to hold the key:models and the value: a list of corresponding colors
 for make in makes:
     make_model = dict()
     # the key is make 'toyota' and the value is another dictionary
@@ -62,7 +62,6 @@ for make in makes:
 
 # for key: 'toyota', value: { 'prius': ['charcoal', 'brick', 'ivory'], 'camry': ['black', 'red', 'white'] }
 for (key, value) in report_object.items():
-    
     print(f'{key}')
     print('---------------')
     for (model, colors) in value.items():
@@ -73,3 +72,4 @@ for (key, value) in report_object.items():
             a = a[slice(-2)] + f'.'
         print(a)
     print()
+
